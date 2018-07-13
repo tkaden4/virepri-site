@@ -1,3 +1,4 @@
+@import "src/settings"
 // global presets for elements
 *
     margin: 0
@@ -5,5 +6,32 @@
     // much more intuitive
     box-sizing: border-box
 
+html, body
+    height: 100%
+    width: 100%
+    font-family: "IBM Plex Sans", "Roboto", Arial, Helvetica, sans-serif
+
+#footer
+    display: none
+    color: ghostwhite
+    opacity: 0.9
+    font-size: 0.8em
+    margin-bottom: $padding
+    background-color: transparent
+
+    position: absolute
+    bottom: 0
+
+    width: 100%
+    height: 20px
+
+    text-align: center
+    > #heart
+        color: pink
+    > #name
+        color: orangered
+        text-decoration: none
+        &:hover
+            opacity: 0.8
+
 #react-app
-    // nothing for now, maybe it should fill screen

@@ -10,8 +10,9 @@ export const Profile = () =>
             <div className="job-title">Go/Networking Specialist</div>
             <div className="quote">I like to make stuff</div>
             <div className="contact-links">
-                <a href="_about"><i className="fab fa-github"></i></a>
-                <a href="_about"><i className="fab fa-linkedin"></i></a>
+                <a href="https://github.com/virepri" alt="Virepri's github" target="_blank">
+                    <i className="fab fa-github"></i>
+                </a>
             </div>
         </div>
     </div >;

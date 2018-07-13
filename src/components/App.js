@@ -19,17 +19,6 @@ export class App extends React.Component {
                 <Profile />
                 <Skills />
             </div>
-            <div id="footer">
-                Made with
-                &nbsp;
-                <span id="heart">
-                    ❤
-                </span>
-                &nbsp; by &nbsp;
-                <a id="name" href="https://www.tkaden.net" target="_blank">
-                    Kaden Thomas
-                </a>
-            </div>
         </div>;
     }
 }
