@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto')
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans')
+
+// the classic .centered class, as a mixin
+@mixin centered
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+
+// used for top-level app components
+@mixin uniform-shadow
+    box-shadow: 5px 5px 10px black
+
+// quote utility
+@mixin quote($color)
+    color: $color
+    font-style: italic
+    &::before
+        content: '\"'
+    &::after
+        content: '\"'
+
+// primary and secondary colors
+$p-color: #1a1a1c
+$s-color: ghostwhite
+
+$padding: 6px
+$border-round-constant: 5px

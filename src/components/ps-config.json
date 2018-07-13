@@ -1,0 +1,31 @@
+{
+    "particles": {
+        "number": {
+            "value": 40,
+            "density": {
+                "enabled": true,
+                "value_area": 500
+            }
+        },
+        "size": {
+            "value": 0.8,
+            "random": false
+        },
+        "move": {
+            "speed": 0.5
+        },
+        "shape": {
+            "type": "circle"
+        }
+    },
+    "interactivity": {
+        "events": {
+            "onhover": {
+                "enable": false
+            },
+            "onclick": {
+                "enable": false
+            }
+        }
+    }
+}

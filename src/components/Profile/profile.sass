@@ -1,0 +1,66 @@
+@import "../../settings"
+
+.profile
+    padding: $padding
+
+    background-color: transparentize($s-color, 0.15)
+    color: $p-color
+
+    display: flex
+    flex-flow: row nowrap
+    justify-content: flex-start
+
+    @media (max-width: 540px)
+        font-size: 13px
+        text-align: center
+        justify-content: center
+        flex-wrap: wrap
+
+    //@include uniform-shadow
+
+    height: 100%
+    width: 100%
+
+    border-radius: $border-round-constant $border-round-constant 0 0
+
+    .icon
+        // This code grosses me out
+        @media (min-width: 541px)
+            max-width: 150px
+            max-height: 150px
+        @media (max-width: 540px)
+            flex-grow: 1
+            margin-right: 0
+
+        margin-right: 10px
+
+        border: 1px solid lightgrey
+        border-radius: 3px
+
+    .info
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        > .name
+            font-size: 3.3em
+            margin-bottom: -0.2em
+            white-space: nowrap
+            @media (min-width: 540px)
+                margin-right: 5px
+
+        > .job-title
+            font-size: 1.3em
+            color: lighten($p-color, 10)
+            white-space: nowrap
+        
+        > .quote
+            @include quote(lighten($p-color, 20))
+        
+        > .contact-links
+            font-size: 1.4em
+            > a 
+                color: rgb(100, 0, 200)
+                &:hover
+                    opacity: 0.7
+
+                margin-right: 5px

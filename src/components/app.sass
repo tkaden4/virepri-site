@@ -1,0 +1,41 @@
+@import "../settings"
+
+.app
+    font-family: "IBM Plex Sans", "Roboto", Arial, Helvetica, sans-serif
+
+    background-color: $p-color
+    color: $s-color
+    // should this be moved up to #react-app?
+    height: 100vh
+    width: 100vw
+    // this is because particles.js overflows
+    overflow: hidden
+
+#particles-js
+    height: 100%
+    width: 100%
+
+#splash-info
+    @include centered
+
+    max-width: 80vw
+    font-size: 15px
+    > *
+        &:not(:last-child)
+            //margin-bottom: 10px
+
+
+#footer
+    opacity: 0.9
+    font-size: 0.8em
+    margin-bottom: $padding
+    position: absolute
+    background-color: transparent
+    text-align: center
+    bottom: 0
+    width: 100%
+    > #heart
+        color: pink
+    > #name
+        color: orangered
+        text-decoration: none
