@@ -3,27 +3,46 @@
 $color: transparentize($s-color, 0.15)
 
 .skills
-    //@include uniform-shadow
     background-color: transparentize($s-color, 0.9)
+
     padding: $padding
-    border-radius: 0px 0px $border-round-constant $border-round-constant
+
     display: flex
-    flex-direction: column
-    justify-content: space-around
+
     border: 1px solid $color
     border-top: none
+    border-radius: 0px 0px $border-round-constant $border-round-constant
+
+
+.dots
+
+.skill-dot
+    $dot-size: 8px
+    height: $dot-size
+    width: $dot-size
+    flex-basis: $dot-size
+    border-radius: 50%
+    border: 1px solid $color
+    &:not(:last-child)
+        margin-bottom: 5px
+
+.on
+    background-color: $color
+
 
 .skill
-    flex-grow: 1
     margin: $padding
+
     display: flex
+    flex-direction: column
     align-items: center
+    flex-grow: 1
 
     > .name
         text-align: center
-        margin-right: $padding
         flex-basis: 30px
         flex-grow: 0.10
+
     > .bar
         margin-left: $padding
         flex-grow: 1
